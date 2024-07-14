@@ -38,7 +38,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="bg-cover bg-center py-20 px-4 md:h-[450px]">
-        <div class="container mx-auto text-center text-gray-800">
+        <div class="container mx-auto text-center flex flex-col items-center text-gray-800">
             <h1 class="text-5xl font-bold mb-4">All PDF tools you need in one place</h1>
             <p class="text-xl mb-8 font-bold text-gray-500">Merge, split, compress, convert, rotate, unlock and
                 watermark PDFs with just a few
@@ -54,7 +54,7 @@
             <h2 class="text-3xl text-red-500 font-bold mb-8">Our Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded shadow">
-                    <!-- add image icon for section-->
+
                     <div class="flex justify-center mb-2">
                         <img src="./icons/merge_prev_ui.png" alt="merge icon" width="60px">
                     </div>
@@ -85,7 +85,7 @@
             <h2 class="text-3xl text-red-500 font-bold mb-8">What Our Users Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-gray-100 p-6 rounded shadow">
-                    <!-- add human picture with avater and border rounded -->
+
                     <div class="flex justify-center mb-2 rounded-full border-2 border-sky-200 ">
                         <img src="./images/human/m.png" alt="user icon" width="80px"
                             class="rounded-full border-2  border-gray-300">
@@ -116,22 +116,29 @@
 
 
     <!-- About Section -->
-    <section id="about" class="px-4 py-16 bg-white">
-        <div>
+    <section id="about" class="px-4 py-16 bg-white ">
 
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl text-red-500 font-bold mb-8">About Us</h2>
-                <p class="mb-4">We are a team of passionate individuals committed to providing the best PDF tools on the
+
+        <div class="container mx-auto  ">
+            <h2 class="text-3xl text-red-500 font-bold mb-8 text-center">About Us</h2>
+            <div class=" md:flex items-center gap-4">
+                
+            <div>
+                <p class="mb-4 font-bold text-gray-500">We are a team of passionate individuals committed to providing the best PDF tools on the
                     web. Our mission is to make PDF management easy and accessible for everyone.</p>
-                <p class="mb-4">With our suite of tools, you can merge, split, compress, convert, rotate, unlock, and
+                <p class="mb-4 font-bold text-gray-500">With our suite of tools, you can merge, split, compress, convert, rotate, unlock, and
                     watermark PDFs with just a few clicks. We strive to offer the highest quality service to our users
                     and
                     constantly improve our tools based on your feedback.</p>
             </div>
-            <div>
-
+            <div class="mx-auto h-[350px] overflow-hidden">
+                <img src="./images/aboutus.jpg" alt="about us" class="rounded-lg shadow-lg  ">
+            </div>
             </div>
         </div>
+
+
+
     </section>
     <!-- Pricing Section -->
     <section id="pricing" class="px-4 py-16 bg-gray-100">

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gray-50 text-gray-800 scroll-smooth">
+<body class="bg-gray-50 text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -24,7 +24,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg></button>
-                    <ul id="hamburger-menu" class=" flex space-x-4 flex-col  max-w-md  font-bold text-gray-500 bg-gray-50 text-left absolute top-8 left-6 px-4 py-2 shadow-lg">
+                    <ul id="hamburger-menu" class=" flex space-x-4 flex-col  max-w-md  font-bold text-gray-500 bg-gray-50 text-left absolute top-8 left-6 px-4 py-2 shadow-lg hidden">
                         <li><a href="#hero" class="px-4 py-2 text-gray-700 hover:text-red-500">Home</a></li>
                         <li><a href="#features" class=" text-gray-700 hover:text-red-500">Tools</a></li>
                         <li><a href="#about" class="text-gray-700 hover:text-red-500">About</a></li>
@@ -60,7 +60,7 @@
             <p class="text-xl mb-8 font-bold text-gray-500">Merge, split, compress, convert, rotate, unlock and
                 watermark PDFs with just a few
                 clicks.</p>
-            <a href="#get-started" class="bg-red-500 text-white px-8 py-4 rounded hover:bg-red-600 font-bold">Get
+            <a id="get-started" href="#get-started" class="bg-red-500 text-white px-8 py-4 rounded hover:bg-red-600 font-bold">Get
                 Started</a>
         </div>
     </section>
@@ -132,7 +132,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="px-4 py-16  ">
+    <section id="pricing" class="px-4 py-16  md:bg-gray-50">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl text-red-500 font-bold ">Pricing Plans</h2>
             <p class="text-xl text-gray-500 font-medium mb-8 font-bold">Choose a plan that works best for you and your
@@ -325,10 +325,12 @@
                 <a href="#about" class="text-gray-400 hover:text-white mx-2">About</a>
                 <a href="#contact" class="text-gray-400 hover:text-white mx-2">Contact</a>
             </div>
-            <div class="mb-4 max-w-xs mx-auto">
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Facebook</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Twitter</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">LinkedIn</a>
+            <div class="mb-4 max-w-xs mx-auto flex ">
+                <a href="https://www.facebook.com/sakil470004" class="text-gray-400 hover:text-white mx-2"><img src="./icons/facebook.png" width="40px" alt=""></a>
+                <a href="https://github.com/sakil470004" target="_blank" class="text-gray-400 hover:text-white mx-2"><img src="./icons/github.png" width="40px" alt=""></a>                  
+                <a href="https://www.linkedin.com/in/mynul-islam-sakil/" class="text-gray-400 hover:text-white mx-2"><img src="./icons/linkedin.png" width="40px" alt=""></a>                  
+                 
+               
             </div>
             <div class="text-center">
                 <p>&copy; 2024 PDF FIXER. All rights reserved

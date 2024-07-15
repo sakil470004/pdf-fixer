@@ -1,5 +1,13 @@
+
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url('./images/bg.jpg');
     background-size: cover; /* Cover the entire page */
     background-attachment: fixed; /* Optional: Makes the background fixed during scroll */
+    
+    scroll-behavior: smooth;
+
+
 }

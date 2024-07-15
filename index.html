@@ -12,12 +12,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
     <!-- Header -->
     <header class="bg-white shadow">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-red-500 flex items-center gap-2"><img src="./icons/logo.png"
-                    alt="pdf logo" width="60px"><span class="hidden md:block">PDF FIXER</span></div>
+            <!-- add hide and show menu button -->
+            <div class="block md:hidden relative">
+                <button id="menu-btn" class="text-2xl text-gray-500 focus:outline-none"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg></button>
+                    <ul id="hamburger-menu" class=" flex space-x-4 flex-col  max-w-md  font-bold text-gray-500 bg-gray-50 text-left absolute top-8 left-6 px-4 py-2 shadow-lg">
+                        <li><a href="#hero" class="px-4 py-2 text-gray-700 hover:text-red-500">Home</a></li>
+                        <li><a href="#features" class=" text-gray-700 hover:text-red-500">Tools</a></li>
+                        <li><a href="#about" class="text-gray-700 hover:text-red-500">About</a></li>
+                        <li><a href="#contact" class="text-gray-700 hover:text-red-500">Contact</a></li>
+                    </ul>
+            </div>
+            <a href="/">
+                <div class="text-2xl font-bold text-red-500 flex items-center gap-2"><img src="./icons/logo.png"
+                        alt="pdf logo" width="60px"><span class="hidden md:block">PDF FIXER</span></div>
+            </a>
             <nav class="hidden md:block">
                 <ul class="flex space-x-4 font-bold text-gray-500">
                     <li><a href="#hero" class="text-gray-700 hover:text-red-500">Home</a></li>
@@ -26,11 +43,11 @@
                     <li><a href="#contact" class="text-gray-700 hover:text-red-500">Contact</a></li>
                 </ul>
             </nav>
-            <div>
+            <div >
                 <a href="#get-started"
                     class="bg-red-500 text-white px-2 py-1 md:px-4 md:py-2 rounded hover:bg-red-600">Get Started</a>
                 <a href="#try-free"
-                    class="ml-4 bg-blue-500 text-white px-2 py-1 md:px-4 md:py-2 rounded hover:bg-blue-600">Try for
+                    class="ml-4 bg-blue-500 text-white px-2 py-1 md:px-4 md:py-2 rounded hover:bg-blue-600 ">Try for
                     Free</a>
             </div>
         </div>
